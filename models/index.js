@@ -21,7 +21,7 @@ Product.belongsToMany(Tag, {
 });
 
 // Tags belongToMany Products (through ProductTag)
-Tag.belongsToMang(Product, {
+Tag.belongsToMany(Product, {
   through: ProductTag,
   as: 'product_tags',
   foreignKey: 'tag_id'
