@@ -1,4 +1,4 @@
-const seedAll = require('./seeds/index');
+const seedAll = require('../seeds/index');
 require('dotenv').config();
 
 const Sequelize = require('sequelize');
