@@ -1,5 +1,4 @@
 // dependencies
-const seedAll = require('./seeds/index');
 const express = require('express');
 const routes = require('./routes');
 // const path = require('path');
@@ -8,9 +7,6 @@ const routes = require('./routes');
 const sequelize = require('./config/connection');
 const app = express();
 const PORT = process.env.PORT || 3001;
-
-// seed database
-seedAll();
 
 // express middleware
 app.use(express.json());
