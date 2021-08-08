@@ -141,24 +141,7 @@ router.delete('/:id', (req, res) => {
   Product.destroy({
     where: {
       id: req.params.id
-    },
-    attributes: ["id", "product_name", "price", "stock"],
-    // include associated Category and Tag data
-    include: [
-      {
-        model: Category,
-        attributes: ["id", "category_name"]
-      },
-      {
-        model: ProductTag,
-        as: "product_tags",
-        attributes: ["tag_id"],
-        include: {
-          model: Tag,
-          attributes: ["tag_name"]
-          }
-        }
-      ]
+    }
   })
     .then((dbProductData) => res.json(dbProductData))
     .catch((err) => {

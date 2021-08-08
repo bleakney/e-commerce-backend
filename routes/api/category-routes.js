@@ -51,15 +51,13 @@ router.get("/:id", (req, res) => {
 });
 
 // ADD A NEW CATEGORY TO THE DATABASE
-router.post("/", (req, res) => {
-  Category.create({
-    category_name: req.body.category_name
-  })
-  .then(newCategoryData => res.json(newCategoryData))
-  .catch(err => {
+router.post('/', (req, res) => {
+  Category.create(req.body)
+  .then((newCategory) => res.status(200).json(newCategory))
+  .catch((err) => {
     console.log(err);
     res.status(500).json(err);
-  })
+  });
 });
 
 // UPDATE A CATEGORY IN THE DATABASE THROUGH ITS 'id' VALUE
