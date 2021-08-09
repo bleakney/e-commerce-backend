@@ -30,9 +30,6 @@
 
   ## Questions
 
-  ### Where to find me:
-  [Github](http://www.github.com/bleakney)
-
   ### Where to reach me:
   [Email](mailto:bleakneyb@gmail.com)
 
