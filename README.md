@@ -37,4 +37,4 @@
   [Heroku](https://lit-scrubland-92684.herokuapp.com/api/)
   
   ### Google Drive screen recording demo of application:
-  [Demo] (https://drive.google.com/file/d/1LTzbnFcB2YebzgzBa--kpS2tXWrIBxN0/view)
+  [Demo](https://drive.google.com/file/d/1LTzbnFcB2YebzgzBa--kpS2tXWrIBxN0/view)
